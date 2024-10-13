@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GeCode - Codificación y Mantenimiento</title>
+
+       <!-- Favicon -->
+       <link rel="icon" href="log/img/logo.jpg" type="image/png">
+    
+    <!-- Enlaces de Bootstrap y CSS personalizado -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="log/style.css">
+ 
+    <!-- Enlaces de Toastr.js para notificaciones -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" rel="stylesheet">
+
+    <!-- Font Awesome para iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+
+
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">GeCode</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Banner principal -->
+<section class="banner d-flex align-items-center justify-content-center fade-in">
+    <div class="text-center">
+        <h1>Bienvenido a GeCode</h1>
+        <p>Tu solución en codificación y mantenimiento de computadoras</p>
+        <a href="#servicios" class="btn btn-secondary">Conoce nuestros servicios</a>
+    </div>
+</section>
+
+<!-- Tecnologias que utilizamos -->
+<section class="technologies container my-5 text-center fade-in">
+    <h2 class="mb-4">Tecnologías que utilizamos</h2>
+    <div class="row justify-content-center">
+        <div class="col-md-2">
+            <img src="log/img/logos/icono-html.png" class="img-fluid" alt="HTML">
+        </div>
+        <div class="col-md-2">
+            <img src="log/img/logos/icono-css.png" class="img-fluid" alt="CSS">
+        </div>
+        <div class="col-md-2">
+            <img src="log/img/logos/icono-js.png" class="img-fluid" alt="JavaScript">
+        </div>
+        <div class="col-md-2">
+            <img src="log/img/logos/icono-php.png" class="img-fluid" alt="PHP">
+        </div>
+      <!--   <div class="col-md-2">
+            <img src="log/img/logos/icono-typescript.png" class="img-fluid" alt="TypeScript">
+        </div> -->
+<!--         <div class="col-md-2">
+            <img src="img/csharp_icon.png" class="img-fluid" alt="C#">
+        </div>
+        <div class="col-md-2">
+            <img src="img/dotnet_icon.png" class="img-fluid" alt=".NET">
+        </div> -->
+        <div class="col-md-2">
+            <img src="log/img/logos/icono-mysql.png" class="img-fluid" alt="MySQL">
+        </div>
+<!--         <div class="col-md-2">
+            <img src="img/oracle_icon.png" class="img-fluid" alt="Oracle">
+        </div>
+    </div> -->
+</section>
+
+
+<section class="mejor container my-5 text-center fade-in">
+        <h1 class="mb-4">Tu mejor opción de Desarrollo, Mantenimiento y Asesoria Tecnológica</h1>
+        <div class="row justify-content-center">
+</section>
+
+<div class="custom-line"></div>
+
+<!-- Sección de Servicios -->
+<section id="servicios" class="container my-5 fade-in">
+    <div class="row text-center">
+        <h2 class="mb-4">Nuestros Servicios</h2>
+  
+        <!-- Servicio de Codificación -->
+        <div class="col-md-4 fade-in">
+            <div class="card shadow">
+                <img src="log/img/codigo.png" class="card-img-top" alt="Codificación">
+                <div class="card-body">
+                    <h5 class="card-title">Codificación</h5>
+                    <p class="card-text">Desarrollamos soluciones de software a medida para tu negocio.</p>
+                    <a href="#codificacion" class="btn btn-outline-danger">Saber más...
+                    <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Servicio de Mantenimiento de Computadoras -->
+        <div class="col-md-4 fade-in">
+            <div class="card shadow">
+                <img src="log/img/herramienta2.jpg" class="card-img-top" alt="Mantenimiento de Computadoras">
+                <div class="card-body">
+                    <h5 class="card-title">Mantenimiento de Computadoras</h5>
+                    <p class="card-text">Reparación, mantenimiento preventivo y correctivo de equipos.</p>
+                    <a href="#mantenimiento" class="btn btn-outline-danger">Saber más...
+                    <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Servicio de Asesoría Técnica -->
+        <div class="col-md-4 fade-in">
+            <div class="card shadow">
+                <img src="log/img/asesor.png" class="card-img-top" alt="Asesoría Técnica">
+                <div class="card-body">
+                    <h5 class="card-title">Asesoría Técnica</h5>
+                    <p class="card-text">Te ayudamos a optimizar tu infraestructura tecnológica.</p>
+                    <a href="contacto.html" class="btn btn-outline-danger">Saber más...
+                    <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="custom-line"></div>
+
+<!-- Saber más codificación -->
+
+<section id="codificacion" class="container my-5 fade-in">
+    <div class="row text-center">
+        <h2 class="mb-4">Proyectos Personales</h2>
+        <p class="card-text"> Adaptamos la Aplicación Web a tu Necesidad. </p>
+
+        <!-- Primera fila: Imagen a la izquierda, texto a la derecha -->
+        <div class="row mb-4">
+    <div class="col-md-8">
+        <img src="log/img/blog_principal.png" class="img-fluid img-clickable" alt="Blog de Videojuegos">
+    </div>
+    <div class="col-md-4 d-flex align-items-center">
+        <div>
+            <h5 class="card-title">Blog de Videojuegos.</h5>
+            <p class="card-text">Blog realizado completamente por medio de HTML, CSS y PHP.</p>
+        </div>
+    </div>
+</div>
+
+
+          <!-- Segunda fila: Texto a la izquierda, imagen a la derecha -->
+
+          <div class="row mb-4">
+            <div class="col-md-8">
+                <img src="log/img/contable_partidas.png" class="img-fluid img-clickable" alt="Blog de Videojuegos">
+            </div>
+            <div class="col-md-4 d-flex align-items-center">
+                <div>
+                    <h5 class="card-title">Sistema Contable.</h5>
+                    <p class="card-text">Sistema Contable para PYMES; realizado en: HTML, CSS, PHP, JavaScript, MySQL.</p>
+                </div>
+            </div>
+        </div>
+<!--           <div class="row mb-4">
+    <div class="col-md-4 d-flex align-items-center">
+        <div>
+            <h5 class="card-title">Sistema Contable.</h5>
+            <p class="card-text">Sistema Contable para PYMES; realizado en: HTML, CSS, PHP, JavaScript, MySQL.</p>
+        </div>
+    </div>
+    <div class="col-md-8">
+        <img src="log/img/contable_partidas.png" class="img-fluid img-clickable" alt="Aplicación de Gestión">
+    </div>
+</div> -->
+
+
+        
+            <!-- Tercera fila: Imagen a la izquierda, texto a la derecha -->
+   <div class="row mb-4">
+        <div class="col-md-8">
+            <img src="log/img/citas_vercitas.png" class="img-fluid img-clickable" alt="Blog de Videojuegos">
+        </div>
+        <div class="col-md-4 d-flex align-items-center">
+            <div>
+                <h5 class="card-title">Sistema de Citas para Clínicas.</h5>
+                <p class="card-text">Sistema de Citas para Clínicas; realizado en: HTML, CSS, PHP, JavaScript, MySQL.</p>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<div class="custom-line"></div>
+
+
+<section id="mantenimiento" class="container my-5 fade-in">
+    <div class="row text-center">
+        <h2 class="mb-4">Mantenimiento</h2>
+        <p class="mb-5">Ofrecemos un servicio de mantenimiento integral para tus equipos, asegurando su óptimo funcionamiento y prolongando su vida útil.</p>
+    </div>
+
+    <div class="row text-center">
+        <div class="col-md-3">
+            <img src="log/img/mantenimiento_memoria.png" class="img-fluid mb-4" alt="Mantenimiento Preventivo">
+            <p>Mantenimiento Preventivo</p>
+        </div>
+        <div class="col-md-3">
+            <img src="log/img/mantenimiento_pasta.png" class="img-fluid mb-4" alt="Mantenimiento Correctivo">
+            <p>Mantenimiento Correctivo</p>
+        </div>
+        <div class="col-md-3">
+            <img src="log/img/mantenimiento_actualización.png" class="img-fluid mb-4" alt="Actualización de Software">
+            <p>Actualización de Software</p>
+        </div>
+        <div class="col-md-3">
+            <img src="log/img/mantenimiento_rendimiento.png" class="img-fluid mb-4" alt="Optimización de Rendimiento">
+            <p>Optimización de Rendimiento</p>
+        </div>
+    </div>
+</section>
+
+
+
+  <!-- Footer -->
+  <footer class="bg-light py-3">
+    <div class="container d-flex justify-content-between align-items-center">
+        <div class="text-left">
+            <p class="mb-0">&copy; 2024 GeCode. Todos los Derechos Reservados.</p>
+        </div>
+        <div class="text-right">
+            <h6> Redes Sociales </h6>
+            <a href="https://www.instagram.com/gecode1/" target="_blank" class="social-link me-2">
+                <i class="fab fa-instagram fa-lg"></i>
+            </a>
+        </div>
+    </div>
+</footer>
+
+
+    <script src="scripts/script.js"></script>
+    <script src="scripts/scroll.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

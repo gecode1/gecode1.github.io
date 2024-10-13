@@ -1,0 +1,95 @@
+/* Estilos personalizados */
+.banner {
+    height: 100vh;
+    background: url('img/principal.jpg') no-repeat center center;
+    background-size: cover;
+    color: white;
+}
+
+.banner h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.banner p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+/* Boton de Nuestros servicios */
+.btn-secondary {
+    background-color: #d7272e;
+    border-color: #fd4483;
+}
+
+
+/* Animaciones para hacer que los elementos aparezcan */
+.fade-in {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* Estilos para los iconos en el footer Redes Sociales*/
+.social-link {
+    color: #000; /* Color inicial negro */
+    transition: color 0.3s ease; /* Transición suave al cambiar de color */
+}
+
+.social-link:hover {
+    color: #fd4483; /* Cambia el color a azul claro cuando se pasa el mouse */
+}
+
+/* Imagenes de Codificación */
+
+.card-img-top {
+    height: 150px; /* Puedes ajustar el tamaño según sea necesario */
+    object-fit: contain;
+}
+
+/* Tamaño de iconos */
+.technologies img {
+    max-width: 125px; /* Ajusta el tamaño según sea necesario */
+    margin: 10px; /* Espacio entre las imágenes */
+    filter: grayscale(100%); /* Aplica el filtro de blanco y negro */
+    transition: filter 0.3s ease; /* Transición suave para cualquier cambio */
+}
+
+.technologies img:hover {
+    filter: grayscale(0%); /* Al pasar el mouse, vuelve a color */
+}
+
+/* Linea divisora */
+
+.custom-line {
+    width: 100px; /* Controla el ancho de la línea */
+    height: 4px; /* Grosor de la línea */
+    margin: 20px auto; /* Centra la línea y agrega espacio arriba y abajo */
+    background: linear-gradient(to right, #e43212, #938699); /* Degradado de colores */
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+
+/* IMAGEN PARA MOSTRAR */
+
+   /* Estilo de la imagen clickeable */
+   .img-clickable {
+    cursor: pointer;
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.img-clickable:hover {
+    transform: scale(1.05); /* Efecto de zoom al pasar el mouse */
+}
