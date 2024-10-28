@@ -40,15 +40,40 @@ html {
 }
 
 
+
+
 /* Estilos para los iconos en el footer Redes Sociales*/
 .social-link {
     color: #000; /* Color inicial negro */
     transition: color 0.3s ease; /* Transición suave al cambiar de color */
+    text-decoration: none;
+}
+.social-link1 {
+    color: #000; /* Color inicial negro */
+    transition: color 0.3s ease; /* Transición suave al cambiar de color */
+    text-decoration: none;
+}
+.social-link2 {
+    color: #000; /* Color inicial negro */
+    transition: color 0.3s ease; /* Transición suave al cambiar de color */
 }
 
+
+/* Colores Especificos CSS and BootStrap */
 .social-link:hover {
     color: #fd4483; /* Cambia el color a azul claro cuando se pasa el mouse */
 }
+
+.social-link1:hover {
+    color: #1a0fe3; /* Cambia el color a azul claro cuando se pasa el mouse */
+}
+
+.social-link2:hover {
+    color: #69C9D0; /* Cambia el color a azul claro cuando se pasa el mouse */
+}
+
+
+
 
 /* Imagenes de Codificación */
 
