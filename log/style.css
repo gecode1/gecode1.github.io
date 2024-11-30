@@ -1,128 +1,130 @@
 /* Estilos personalizados */
+
+/* General para dispositivos pequeños */
+body {
+    font-size: 14px; /* Reduce ligeramente el tamaño de fuente en pantallas pequeñas */
+}
+
+/* Banner */
 .banner {
-    height: 100vh;
-    background: url('img/principal.jpg') no-repeat center center;
-    background-size: cover;
-    color: white;
+    height: auto; /* Ajusta el alto automáticamente en móviles */
+    padding: 20px 10px; /* Añade espacio interno */
+    text-align: center;
 }
 
 .banner h1 {
-    font-size: 3rem;
-    font-weight: bold;
+    font-size: 2rem; /* Ajusta el tamaño del texto */
 }
 
 .banner p {
-    font-size: 1.2rem;
-    margin-bottom: 20px;
+    font-size: 1rem;
+    margin-bottom: 15px;
 }
 
-/* Boton de Nuestros servicios */
+/* Botón de "Nuestros servicios" */
 .btn-secondary {
-    background-color: #d7272e;
-    border-color: #fd4483;
+    font-size: 0.9rem;
+    padding: 10px 20px;
 }
 
-
-/* Animaciones para hacer que los elementos aparezcan */
-.fade-in {
-    opacity: 0;
-    transform: translateY(50px);
-    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+/* Tarjetas de servicios */
+.card {
+    margin-bottom: 20px; /* Añade espacio entre las tarjetas en dispositivos pequeños */
 }
 
-.fade-in.visible {
-    opacity: 1;
-    transform: translateY(0);
+.card-title {
+    font-size: 1.1rem; /* Reduce el tamaño del título */
 }
 
-html {
-    scroll-behavior: smooth;
-}
-
-
-
-
-/* Estilos para los iconos en el footer Redes Sociales*/
-.social-link {
-    color: #000; /* Color inicial negro */
-    transition: color 0.3s ease; /* Transición suave al cambiar de color */
-    text-decoration: none; /* Elimina la decoración guion bajo de un icono */
-}
-.social-link1 {
-    color: #000; /* Color inicial negro */
-    transition: color 0.3s ease; /* Transición suave al cambiar de color */
-    text-decoration: none; /* Elimina la decoración guion bajo de un icono */
-}
-.social-link2 {
-    color: #000; /* Color inicial negro */
-    transition: color 0.3s ease; /* Transición suave al cambiar de color */
-    text-decoration: none; /* Elimina la decoración guion bajo de un icono */
-}
-.social-link3 {
-    color: #000; /* Color inicial negro */
-    transition: color 0.3s ease; /* Transición suave al cambiar de color */
-    text-decoration: none;  /* Elimina la decoración guion bajo de un icono */
-}
-
-/* Colores Especificos CSS and BootStrap */
-.social-link:hover {
-    color: #fd4483; /* Cambia el color a rojo cuando se pasa el mouse */
-}
-
-.social-link1:hover {
-    color: #1a0fe3; /* Cambia el color a azul cuando se pasa el mouse */
-}
-
-.social-link2:hover {
-    color: #69C9D0; /* Cambia el color a verde claro cuando se pasa el mouse */
-}
-
-.social-link3:hover {
-    color: #38d818; /* Cambia el color a verde cuando se pasa el mouse */
-}   
-
-
-
-/* Imagenes de Codificación */
-
-.card-img-top {
-    height: 150px; /* Puedes ajustar el tamaño según sea necesario */
-    object-fit: contain;
-}
-
-/* Tamaño de iconos */
+/* Tecnologías */
 .technologies img {
-    max-width: 125px; /* Ajusta el tamaño según sea necesario */
-    margin: 10px; /* Espacio entre las imágenes */
-    filter: grayscale(100%); /* Aplica el filtro de blanco y negro */
-    transition: filter 0.3s ease; /* Transición suave para cualquier cambio */
+    max-width: 80px; /* Ajusta el tamaño de los íconos en móviles */
+    margin: 5px;
 }
 
-.technologies img:hover {
-    filter: grayscale(0%); /* Al pasar el mouse, vuelve a color */
+/* Footer */
+footer {
+    text-align: center; /* Centra el contenido del footer */
+    font-size: 0.9rem;
 }
 
-/* Linea divisora */
-
-.custom-line {
-    width: 100px; /* Controla el ancho de la línea */
-    height: 4px; /* Grosor de la línea */
-    margin: 20px auto; /* Centra la línea y agrega espacio arriba y abajo */
-    background: linear-gradient(to right, #e43212, #938699); /* Degradado de colores */
-    border-radius: 10px; /* Bordes redondeados */
+footer .social-link {
+    font-size: 1.2rem; /* Reduce el tamaño de los íconos sociales */
+    margin: 0 5px;
 }
 
+/* Responsive Design */
 
-/* IMAGEN PARA MOSTRAR */
+/* Para pantallas menores a 768px (tablets y móviles) */
+@media (max-width: 768px) {
+    .navbar-brand {
+        font-size: 1.2rem;
+    }
 
-   /* Estilo de la imagen clickeable */
-   .img-clickable {
-    cursor: pointer;
-    max-width: 100%;
-    height: auto;
-    transition: transform 0.3s ease;
+    .banner h1 {
+        font-size: 1.8rem;
+    }
+
+    .banner p {
+        font-size: 1rem;
+    }
+
+    .technologies .row {
+        flex-wrap: wrap; /* Permite que los íconos se acomoden en múltiples filas */
+        justify-content: center;
+    }
+
+    .card-img-top {
+        height: auto; /* Permite que las imágenes se ajusten automáticamente */
+        max-width: 100%;
+    }
+
+    .mejor h1 {
+        font-size: 1.5rem; /* Reduce el tamaño de los textos grandes */
+    }
+
+    .btn-outline-danger {
+        font-size: 0.8rem;
+    }
+
+    .custom-line {
+        width: 50px; /* Reduce el ancho de la línea divisoria */
+    }
+
+    footer {
+        font-size: 0.8rem; /* Reduce el tamaño de las fuentes */
+    }
 }
 
-.img-clickable:hover {
-    transform: scale(1.05); /* Efecto de zoom al pasar el mouse */
+/* Para pantallas menores a 480px (móviles pequeños) */
+@media (max-width: 480px) {
+    .navbar-brand {
+        font-size: 1rem;
+    }
+
+    .banner h1 {
+        font-size: 1.5rem;
+    }
+
+    .banner p {
+        font-size: 0.9rem;
+    }
+
+    .btn-secondary {
+        font-size: 0.8rem;
+        padding: 8px 15px;
+    }
+
+    .card-title {
+        font-size: 1rem;
+    }
+
+    footer .social-link {
+        font-size: 1rem;
+    }
+
+    iframe {
+        width: 100%; /* Asegura que el video se ajuste al ancho del dispositivo */
+        height: auto;
+    }
 }
