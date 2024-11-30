@@ -28,26 +28,36 @@
 
 </head>
 <body>
-
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">GeCode</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contacto.html">Contacto</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+   
+                    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow sticky-top" id="mainNav">
+                        <div class="container">
+                            <a class="navbar-brand" href="#">
+                                <img src="log/img/logo.jpg" alt="GeCode Logo" width="40" height="40" class="d-inline-block align-text-top">
+                                GeCode
+                            </a>
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#servicios">Servicios</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#mantenimiento">Mantenimiento</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="contacto.html">Contacto</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                    
+    
+    
+    
 
     <!-- Banner principal -->
 <section class="banner d-flex align-items-center justify-content-center fade-in">
@@ -86,10 +96,10 @@
         <div class="col-md-2">
             <img src="log/img/logos/icono-mysql.png" class="img-fluid" alt="MySQL">
         </div>
-<!--         <div class="col-md-2">
-            <img src="img/oracle_icon.png" class="img-fluid" alt="Oracle">
+         <div class="col-md-2">
+            <img src="log/img/logos/Oracle.jpg" class="img-fluid" alt="Oracle">
         </div>
-    </div> -->
+    </div>
 </section>
 
 
@@ -224,22 +234,31 @@
         <p class="mb-5">Ofrecemos un servicio de mantenimiento integral para tus equipos, asegurando su óptimo funcionamiento y prolongando su vida útil.</p>
     </div>
 
-    <div class="row text-center">
-        <div class="col-md-3">
-            <img src="log/img/mantenimiento_memoria.png" class="img-fluid mb-4" alt="Mantenimiento Preventivo">
-            <p>Mantenimiento Preventivo</p>
+    <div class="row text-center justify-content-center">
+        <!-- Cada columna con fondo y sombra -->
+        <div class="col-md-3 col-sm-6 maintenance-item">
+            <div class="maintenance-card">
+                <img src="log/img/mantenimiento_memoria.png" class="img-fluid mb-3" alt="Mantenimiento Preventivo">
+                <p>Mantenimiento Preventivo</p>
+            </div>
         </div>
-        <div class="col-md-3">
-            <img src="log/img/mantenimiento_pasta.png" class="img-fluid mb-4" alt="Mantenimiento Correctivo">
-            <p>Mantenimiento Correctivo</p>
+        <div class="col-md-3 col-sm-6 maintenance-item">
+            <div class="maintenance-card">
+                <img src="log/img/mantenimiento_pasta.png" class="img-fluid mb-3" alt="Mantenimiento Correctivo">
+                <p>Mantenimiento Correctivo</p>
+            </div>
         </div>
-        <div class="col-md-3">
-            <img src="log/img/mantenimiento_actualización.png" class="img-fluid mb-4" alt="Actualización de Software">
-            <p>Actualización de Software</p>
+        <div class="col-md-3 col-sm-6 maintenance-item">
+            <div class="maintenance-card">
+                <img src="log/img/mantenimiento_actualización.png" class="img-fluid mb-3" alt="Actualización de Software">
+                <p>Actualización de Software</p>
+            </div>
         </div>
-        <div class="col-md-3">
-            <img src="log/img/mantenimiento_rendimiento.png" class="img-fluid mb-4" alt="Optimización de Rendimiento">
-            <p>Optimización de Rendimiento</p>
+        <div class="col-md-3 col-sm-6 maintenance-item">
+            <div class="maintenance-card">
+                <img src="log/img/mantenimiento_rendimiento.png" class="img-fluid mb-3" alt="Optimización de Rendimiento">
+                <p>Optimización de Rendimiento</p>
+            </div>
         </div>
     </div>
 </section>

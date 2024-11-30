@@ -167,3 +167,103 @@ body::before {
     border-radius: 10px;
 }
 
+
+
+
+
+
+/* Mantenimiento  */
+
+/* Sección de mantenimiento */
+.maintenance-card {
+    background: rgba(255, 255, 255, 0.9); /* Fondo blanco con transparencia */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 20px; /* Espaciado interno */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animaciones suaves */
+}
+
+.maintenance-card:hover {
+    transform: scale(1.05); /* Efecto de zoom al pasar el mouse */
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
+}
+
+.maintenance-card img {
+    max-width: 80%; /* Ajusta el tamaño de las imágenes */
+    height: auto;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease; /* Animación de imagen */
+}
+
+.maintenance-card img:hover {
+    transform: scale(1.1); /* Efecto de zoom para la imagen */
+}
+
+.maintenance-card p {
+    font-size: 1rem; /* Tamaño de fuente igual al original */
+    font-weight: bold;
+    margin: 0;
+    color: #333;
+}
+
+/* Responsive para dispositivos pequeños */
+@media (max-width: 768px) {
+    .maintenance-card {
+        margin-bottom: 20px; /* Espacio adicional entre tarjetas */
+    }
+
+    .maintenance-card img {
+        max-width: 100%; /* Las imágenes se expanden al contenedor */
+    }
+}
+
+
+
+/* Navbar */
+.navbar {
+    background: rgba(255, 255, 255, 0.95); /* Fondo translúcido */
+    border-bottom: 2px solid #d7272e; /* Línea decorativa */
+    z-index: 1000;
+    position: sticky; /* Se mantiene fijo al hacer scroll */
+    top: 0;
+    padding: 10px 20px;
+}
+
+.navbar-brand {
+    font-family: 'Audiowide', sans-serif;
+    font-size: 1.5rem;
+    color: #333;
+    text-transform: uppercase;
+}
+
+.navbar-brand:hover {
+    color: #d7272e; /* Color al pasar el mouse */
+}
+
+.navbar-nav .nav-link {
+    font-size: 1rem;
+    color: #555;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #d7272e; /* Color rojo al pasar el mouse */
+}
+
+.navbar-toggler {
+    border-color: #d7272e;
+}
+
+.navbar-toggler-icon {
+    background-color: #d7272e;
+    border-radius: 2px;
+    width: 20px;
+    height: 2px;
+}
+
+
+
+/* Ocultar Nav */
+.navbar-collapse {
+    transition: height 0.3s ease-in-out;
+}
